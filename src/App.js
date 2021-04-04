@@ -1,13 +1,13 @@
-import React, { useEffect, useState } from "react";
 import { Button, FormControl, Input, InputLabel } from "@material-ui/core";
+import React, { useEffect, useState } from "react";
 import "./App.css";
 import Message from "./Message";
 
 function App() {
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState([
-    { username: "sonny", text: "heyy" },
-    { username: "qazi", text: "yow guyz" },
+    { username: "sonny", text: "yowww" },
+    { username: "jhagg", text: "ka lisud ba ani" },
   ]);
   const [username, setUsername] = useState("");
 
@@ -20,6 +20,7 @@ function App() {
     setMessages([...messages, { username: username, text: input }]);
     setInput("");
   };
+
   return (
     <div className="App">
       <h1>Messenger-Clone</h1>
